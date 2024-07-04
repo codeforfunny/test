@@ -2,8 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET"])
+@app.route("/", methods=["GET", "HEAD"])
 def index():
+    if request.method == 'HEAD':
+        return '', 200
     return render_template("index.html")
 
 @app.route("/categories/<category>", methods=["GET"])
