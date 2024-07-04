@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
-app.config['DEBUG'] = True  # Enable debug mode
+app = Flask(__name__, template_folder='BizBot/templates', static_folder='BizBot/static')
 
 @app.route("/", methods=["GET", "HEAD"])
 def index():
