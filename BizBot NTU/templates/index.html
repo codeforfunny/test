@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizBot - Your Startup Assistant</title>
+    <link rel="stylesheet" href="/static/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BizBot</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Welcome to BizBot</h1>
+                <p>Your ultimate assistant in starting up a business. We provide tools and guidance to help you launch your startup with ease. Whether it's creating a logo, choosing a name, or finding the right hashtags, BizBot is here to support you every step of the way.</p>
+                <a href="#categories" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </header>
+    <main id="categories">
+        <section class="categories">
+            <h2>Select a Business Category</h2>
+            <div class="category-buttons">
+                <button class="category-btn" onclick="location.href='/categories/beverage'">
+                    <div class="icon"><img src="/static/images/beverage.jpeg" alt="Beverage"></div>
+                    <div class="text">Beverage</div>
+                </button>
+                <button class="category-btn" onclick="location.href='/categories/food'">
+                    <div class="icon"><img src="/static/images/food.jpeg" alt="Food"></div>
+                    <div class="text">Food</div>
+                </button>
+                <button class="category-btn" onclick="location.href='/categories/perfumes'">
+                    <div class="icon"><img src="/static/images/perfumes.jpeg" alt="Perfumes"></div>
+                    <div class="text">Perfumes</div>
+                </button>
+                <!-- Add more buttons as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BizBot. All rights reserved.</p>
+    </footer>
+</body>
+</html>
