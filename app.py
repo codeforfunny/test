@@ -8,7 +8,10 @@ def index():
 
 @app.route("/categories/<category>", methods=["GET"])
 def category_page(category):
-    return render_template(f"{category}.html")
+    if category in ["beverage", "food", "perfumes"]:
+        return render_template(f"{category}.html")
+    else:
+        return "Category not found", 404
 
 if __name__ == "__main__":
     app.run(debug=True)
